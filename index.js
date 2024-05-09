@@ -1,4 +1,4 @@
-/ Given Parameters
+// Given Parameters
 const initialVelocity = 10000; // initial velocity (km/h)
 const acceleration = 3; // acceleration (m/s^2)
 const time = 3600; // seconds (1 hour)
@@ -15,7 +15,7 @@ const calcNewVel = ({ initialVelocity, acceleration, time }) => {
   // Convert initial velocity from km/h to m/s
   const initialVelocityInMps = initialVelocity / 3.6;
 
-  // Calculate new velocity
+  // Calculate new velocity using equations of motion
   const newVelocity = initialVelocityInMps + acceleration * time;
 
   // Convert new velocity back to km/h
