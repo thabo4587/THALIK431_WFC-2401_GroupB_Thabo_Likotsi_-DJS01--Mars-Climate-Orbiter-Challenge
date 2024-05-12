@@ -6,41 +6,46 @@ The Mars Climate Orbiter incident in 1999 is a stark reminder of the importance 
 
 This challenge invites students to debug, refactor, and enhance JavaScript functions designed for determining the trajectory of a spacecraft. The initial functions are flawed and may result in incorrect calculations.
 
-![alt text](mars.gif)
+My Solution
+###Documentation
 
-##### Problem Areas to Address
+JavaScript Debugging Documentation
+File Structure
+The file structure should be organized and intuitive.
+It helps in locating and managing files efficiently.
+Clear file structure enhances collaboration among developers.
+Proper file structure aids in version control and deployment processes.
+Organized files reduce the chances of errors and improve project scalability.
 
-1. **Unit Mismatch**: The provided functions fail to convert units correctly, leading to calculation inaccuracies.
-2. **Parameter Misalignment**: Parameters are not handled in a way that prevents or highlights the potential for unit mismatch errors, leading to possible confusion.
 
-##### Initial Parameters
+Original Code Issues
+Variable names were not semantic, hindering code understanding.
+Incorrect units used in calculations may lead to inaccurate results.
+The calcNewVelocity function was not correctly defined, causing syntax errors.
+Lack of error handling made the code susceptible to unexpected inputs.
+Inadequate comments or documentation may hinder code maintenance and debugging.
 
-- **Initial Velocity (`vel`)**: The starting speed of the spacecraft, 10,000 km/h.
-- **Acceleration (`acc`)**: The spacecraft's acceleration, 3 m/s².
-- **Time (`time`)**: The duration of the calculation, 3,600 seconds (equivalent to 1 hour).
-- **Initial Distance (`d`)**: The starting distance from the reference point, 0 km.
-- **Initial Fuel (`fuel`)**: The starting amount of fuel, 5,000 kg.
-- **Fuel Burn Rate (`fbr`)**: The rate at which fuel is consumed, 0.5 kg/s.
 
-##### Expected Corrected Results
+Changes Made
+Renamed variables to ensure semantic clarity and improve code readability.
+Implemented proper unit conversions to ensure consistent calculations.
+Correctly defined the calcNewVelocity function with appropriate parameter handling.
+Added error handling to handle invalid input parameters effectively.
+Updated comments and documentation for better code understanding and maintenance.
 
-- **New Velocity**: Approximately 48880 km/h after correction.
-- **New Distance**: Approximately 10000 km after correction.
-- **Remaining Fuel**: Approximately 3,200 kg after correction.
 
-#### Your Task
+Debugged Code
+The debugged code now produces accurate results with corrected calculations.
+Improved code readability and maintainability through semantic variable naming.
+Ensured robustness by incorporating error handling for invalid inputs.
+Enhanced code documentation and comments aid in understanding and future debugging.
+Unit conversions are properly implemented to maintain consistency and accuracy in calculations.
 
-1. **Identify and Understand Errors**: Analyse the provided functions to determine how unit mismatches and parameter misalignments cause incorrect results.
-2. **Refactor and Correct**: Modify the functions to handle parameters more effectively, incorporating object destructuring for clarity and implementing necessary unit conversions.
 
-#### Solution Approach
 
-- Use object destructuring in function parameters for better clarity.
-- Implement accurate unit conversions within the functions.
-- Ensure the corrected functions address the issues of unit mismatches and parameter clarity.
-
-#### Debugging Guide
-
-1. Enhance code readability for easier debugging.
-2. Identify and correct calculation errors.
-3. Improve the robustness of calculations. If incorrect units are used or other errors are detected, the code should notify the user instead of producing an incorrect result.
+Conclusion
+JavaScript debugging involves identifying and rectifying various issues to ensure code correctness and reliability.
+Effective debugging practices include semantic variable naming, proper unit conversions, function definition, error handling, and documentation.
+Debugged code not only produces accurate results but also improves code readability, maintainability, and collaboration among developers.
+Regular code reviews and testing are essential for identifying and resolving potential issues, leading to a more robust and stable codebase.
+Continuous improvement in debugging skills and techniques enhances overall software development proficiency and productivity.
